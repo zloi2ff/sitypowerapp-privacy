@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Політика конфіденційності — SityPower</title>
+  <style>
+    :root {
+      --accent: #FF9338;
+      --bg: #f9f9f9;
+      --text: #1a1a1a;
+      --muted: #555;
+      --border: #e0e0e0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 24px 16px 64px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header { margin-bottom: 40px; }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    header p { color: var(--muted); font-size: 0.9rem; }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 36px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    p { margin-bottom: 12px; }
+    ul { padding-left: 24px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .lang-switch {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .lang-switch a {
+      font-size: 0.9rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+    .lang-switch a.active {
+      background: var(--accent);
+      color: #fff;
+    }
+    .section-uk { display: block; }
+    .section-en { display: none; }
+    body.en .section-uk { display: none; }
+    body.en .section-en { display: block; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>SityPower</h1>
+    <p id="subtitle-uk">Політика конфіденційності</p>
+    <p id="subtitle-en" style="display:none">Privacy Policy</p>
+  </header>
+
+  <div class="lang-switch">
+    <a href="#" class="active" id="btn-uk" onclick="setLang('uk'); return false;">Українська</a>
+    <a href="#" id="btn-en" onclick="setLang('en'); return false;">English</a>
+  </div>
+
+  <!-- ========== UKRAINIAN ========== -->
+  <div class="section-uk">
+    <p><strong>Дата набрання чинності:</strong> 14 березня 2026 р.</p>
+    <p>
+      Ця Політика конфіденційності пояснює, як додаток <strong>SityPower</strong>
+      («ми», «наш») збирає, використовує та захищає інформацію під час використання
+      вами нашого мобільного застосунку для iOS та watchOS.
+    </p>
+
+    <h2>1. Яку інформацію ми збираємо</h2>
+    <ul>
+      <li>
+        <strong>Місцезнаходження (опціонально).</strong> Тільки якщо ви надаєте
+        дозвіл «Під час використання» — для автоматичного визначення вашого регіону.
+        Координати не передаються на наші сервери і не зберігаються.
+      </li>
+      <li>
+        <strong>Обрані налаштування.</strong> Регіон, черги відключення, мова та
+        часові параметри сповіщень зберігаються локально на пристрої (App Group
+        UserDefaults) і не передаються стороннім сервісам.
+      </li>
+      <li>
+        <strong>Дані реклами (Google AdMob).</strong> Для відображення банерної
+        реклами ми використовуємо Google AdMob, який може збирати рекламний
+        ідентифікатор (IDFA) та анонімізовані дані про пристрій відповідно до
+        власної Політики конфіденційності Google.
+      </li>
+    </ul>
+
+    <h2>2. Як ми використовуємо інформацію</h2>
+    <ul>
+      <li>Визначення вашого регіону для завантаження актуального графіка відключень.</li>
+      <li>Надсилання локальних push-сповіщень про зміни стану електропостачання.</li>
+      <li>Показ релевантної реклами через Google AdMob.</li>
+    </ul>
+
+    <h2>3. Передача даних третім сторонам</h2>
+    <p>
+      Ми не продаємо і не передаємо ваші персональні дані третім сторонам,
+      за винятком:
+    </p>
+    <ul>
+      <li>
+        <strong>Google AdMob</strong> — рекламна платформа.
+        <a href="https://policies.google.com/privacy" target="_blank">Політика конфіденційності Google</a>.
+      </li>
+      <li>
+        Публічних API-провайдерів графіків (LOE, DTEK, svitlo-proxy) — тільки
+        HTTP-запити без персональних даних.
+      </li>
+    </ul>
+
+    <h2>4. Дозволи застосунку</h2>
+    <ul>
+      <li><strong>Геолокація «Під час використання»</strong> — для автовизначення регіону (опціонально).</li>
+      <li><strong>Сповіщення</strong> — для локальних нагадувань про світло.</li>
+      <li><strong>Відстеження (IDFA)</strong> — Google AdMob може запитувати для персоналізованої реклами. Ви можете відмовитися в налаштуваннях iOS → Конфіденційність → Відстеження.</li>
+    </ul>
+
+    <h2>5. Зберігання даних</h2>
+    <p>
+      Всі налаштування зберігаються локально на пристрої. Ми не маємо власних
+      серверів для збереження персональних даних користувачів.
+    </p>
+
+    <h2>6. Безпека</h2>
+    <p>
+      Ми не збираємо чутливих персональних даних (ім'я, email, паролі, платіжна
+      інформація). Дані графіків завантажуються через HTTPS.
+    </p>
+
+    <h2>7. Діти</h2>
+    <p>
+      Застосунок не призначений для дітей до 13 років і свідомо не збирає
+      інформацію від них.
+    </p>
+
+    <h2>8. Зміни до політики</h2>
+    <p>
+      Ми можемо оновлювати цю Політику. Актуальна версія завжди доступна
+      за цим посиланням. Дата набрання чинності оновлюється при кожній зміні.
+    </p>
+
+    <h2>9. Контакти</h2>
+    <p>
+      Питання щодо конфіденційності надсилайте на:
+      <a href="mailto:support@sitypowerapp.com">support@sitypowerapp.com</a>
+    </p>
+  </div>
+
+  <!-- ========== ENGLISH ========== -->
+  <div class="section-en">
+    <p><strong>Effective Date:</strong> March 14, 2026</p>
+    <p>
+      This Privacy Policy explains how the <strong>SityPower</strong> app
+      ("we", "our") collects, uses, and protects information when you use our
+      iOS and watchOS mobile application.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <ul>
+      <li>
+        <strong>Location (optional).</strong> Only if you grant "While Using"
+        permission — to automatically detect your region. Coordinates are not
+        sent to our servers or stored.
+      </li>
+      <li>
+        <strong>App preferences.</strong> Your selected region, outage queues,
+        language, and notification settings are stored locally on your device
+        (App Group UserDefaults) and are not shared with third parties.
+      </li>
+      <li>
+        <strong>Advertising data (Google AdMob).</strong> To display banner ads
+        we use Google AdMob, which may collect an advertising identifier (IDFA)
+        and anonymized device data under Google's own Privacy Policy.
+      </li>
+    </ul>
+
+    <h2>2. How We Use Information</h2>
+    <ul>
+      <li>To determine your region and load the current power outage schedule.</li>
+      <li>To send local push notifications about power status changes.</li>
+      <li>To display relevant ads via Google AdMob.</li>
+    </ul>
+
+    <h2>3. Sharing with Third Parties</h2>
+    <p>
+      We do not sell or share your personal data with third parties, except:
+    </p>
+    <ul>
+      <li>
+        <strong>Google AdMob</strong> — advertising platform.
+        <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.
+      </li>
+      <li>
+        Public schedule API providers (LOE, DTEK, svitlo-proxy) — plain HTTP
+        requests with no personal data.
+      </li>
+    </ul>
+
+    <h2>4. App Permissions</h2>
+    <ul>
+      <li><strong>Location "While Using"</strong> — for automatic region detection (optional).</li>
+      <li><strong>Notifications</strong> — for local power-status reminders.</li>
+      <li><strong>Tracking (IDFA)</strong> — Google AdMob may request for personalized ads. You can opt out in iOS Settings → Privacy → Tracking.</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <p>
+      All preferences are stored locally on your device. We have no servers that
+      store personal user data.
+    </p>
+
+    <h2>6. Security</h2>
+    <p>
+      We do not collect sensitive personal data (name, email, passwords, payment
+      information). Schedule data is fetched over HTTPS.
+    </p>
+
+    <h2>7. Children</h2>
+    <p>
+      The app is not intended for children under 13 and does not knowingly
+      collect information from them.
+    </p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      We may update this Policy from time to time. The current version is always
+      available at this URL. The effective date is updated with each revision.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      Privacy questions: <a href="mailto:support@sitypowerapp.com">support@sitypowerapp.com</a>
+    </p>
+  </div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.body.className = lang === 'en' ? 'en' : '';
+    document.getElementById('subtitle-uk').style.display = lang === 'uk' ? '' : 'none';
+    document.getElementById('subtitle-en').style.display = lang === 'en' ? '' : 'none';
+    document.getElementById('btn-uk').className = lang === 'uk' ? 'active' : '';
+    document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
+  }
+</script>
+</body>
+</html>
